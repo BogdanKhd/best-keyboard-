@@ -1,20 +1,12 @@
-# Mechanical Keyboard — NATURAL
+# Mechanical Keyboard 
 
-This version intentionally avoids the "Quake 3" character.
+## How to run
 
-Audio:
-- one real Cherry MX Black / ABS recording from the supplied source;
-- stereo is preserved;
-- no pitch shifting;
-- no artificial panning;
-- no compression or soft-clipping;
-- only a tiny ±3.5% volume variation;
-- natural ~0.5 s sample tail;
-- polyphonic mixing (up to 24 overlapping presses);
-- key-repeat suppression;
-- low-latency 256-frame audio buffer.
+Requirements:
+- Java 17+
+- Maven 3+
 
-Run:
-cd ~/Desktop/MechanicalKeyboardNatural
+git clone https://github.com/BogdanKhd/best-keyboard-.git
+cd best-keyboard-
 mvn clean compile
-java -cp "target/classes:$HOME/.m2/repository/com/github/kwhat/jnativehook/2.2.2/jnativehook-2.2.2.jar" MechanicalKeyboardNatural
+mvn exec:java
